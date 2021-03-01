@@ -9,7 +9,8 @@
         <!-- Definisce il charset del sito, lo si cambia nelle impostazioni di WordPress -->
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <!-- Viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- ATTENZIONE: Nello sviluppo WordPress, per includere delle immagini o qualsiasi altro media o file presente nella cartella
         del progetti è necessario inserire nell'attributo href o scr, a seconda del tag che si sta usando, prima
@@ -24,13 +25,17 @@
         <link href="" sizes="144x144" rel="apple-touch-icon-precomposed">
         <!-- Link a tutti i fogli di stile -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/bootstrap.min.css" type="text/css" media="all" />
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/styles/front-page.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/fontawesome.min.css" type="text/css" media="all" />
         <!-- Definisce l'head del sito -->
         <?php wp_head(); ?>
     </head>
     <body>
         <header>
-
+            <?php 
+                    include('template-parts/navbar.php')
+            ?>
         </header>
 
         <main>
