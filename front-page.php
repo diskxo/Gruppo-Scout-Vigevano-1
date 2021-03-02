@@ -6,14 +6,14 @@ include('template-parts/header-home.php')
     <div class="container">
         <div class="row mt-5">
             <div class="col">
-                <img src="assets/images/who-we-are.png" alt="Chi siamo" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/who-we-are.png" alt="Chi siamo" />
             </div>
             <div class="col">
                 <h2>Chi siamo</h2>
                 <h4>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
                 </h4>
-                <button type="button" class="btn btn-success">ENTRA NEL GRUPPO</button>
+                <button type="button" class="btn btn-success">Entra nel gruppo</button>
             </div>
         </div>
     </div>
@@ -27,10 +27,9 @@ include('template-parts/header-home.php')
                     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
                     <div class="card-body">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/LC_NEW1.png" />
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-title">Card sub-title</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the card's content.</p>
+                        <h5 class="card-title-yellow">L/C</h5>
+                        <h6 class="card-title">8-12 ANNI</h6>
+                        <p class="card-text">LUPETTI E COCCINELLE</p>
                         <a href="#" class="btn btn-warning">SCOPRI DI PIU'</a>
                     </div>
                 </div>
@@ -41,11 +40,9 @@ include('template-parts/header-home.php')
                     <div class="card-body">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/EG_logo.png" />
 
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-title">Card sub-title</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk
-                            of the card's content.</p>
+                        <h5 class="card-title-green">E/G</h5>
+                        <h6 class="card-title">12-16 ANNI</h6>
+                        <p class="card-text">ESPLORATORI E GUIDE</p>
                         <a href="#" class="btn btn-success">SCOPRI DI PIU'</a>
                     </div>
                 </div>
@@ -55,11 +52,9 @@ include('template-parts/header-home.php')
                     <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
                     <div class="card-body">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/RS-web.png" />
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-title">Card sub-title</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the
-                            bulk
-                            of the card's content.</p>
+                        <h5 class="card-title-red">R/S</h5>
+                        <h6 class="card-title">16-21 ANNI</h6>
+                        <p class="card-text">ROVER E SCOLTE</p>
                         <a href="#" class="btn btn-danger">SCOPRI DI PIU'</a>
                     </div>
                 </div>
